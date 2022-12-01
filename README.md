@@ -1,1 +1,1 @@
-# netlify-example
+# Study chat app
