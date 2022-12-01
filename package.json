@@ -1,0 +1,16 @@
+{
+  "name": "study-chat-app",
+  "version": "1.0.0",
+  "description": "Client application for practicum chat",
+  "scripts": {
+    "dev": "parcel ./static/index.hbs -p 3000",
+    "build": "parcel build ./static/index.hbs"
+  },
+  "keywords": [],
+  "author": "Vitalii Braun",
+  "license": "ISC",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel": "^2.8.0"
+  }
+}
