@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.8.0"
+    "parcel": "^2.8.0",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0"
   }
 }
