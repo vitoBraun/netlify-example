@@ -1,0 +1,116 @@
+/* @import "../partials/login-form/login-form.css"; */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.auth-container {
+  padding-top: 50px;
+}
+
+.firm-font {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.firm-link {
+  color: #0085ff;
+  font-size: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+form button {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 25px;
+  background: #0085ff;
+  border-radius: 16px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #0085ff;
+  background-color: transparent;
+  outline: none;
+  /* margin-bottom: 30px; */
+  font-size: 20px;
+}
+
+.auth-form {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 35px 35px;
+  position: relative;
+  width: 400px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.auth-form__title {
+  margin-bottom: 15px;
+  font-size: 36px;
+  color: #000000;
+}
+
+.auth-form__input-text {
+  display: block;
+}
+
+.auth-form__input-label {
+  font-size: 20px;
+  display: block;
+}
