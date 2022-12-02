@@ -1,0 +1,35 @@
+.chat-list {
+  background-color: #fbfbfb;
+  width: 350px;
+  position: relative;
+  border: none;
+  border-right: 1px solid #eaeaea;
+}
+
+.chat-list__head {
+  position: relative;
+  height: 60px;
+}
+
+.chat-search {
+  padding: 10px;
+}
+
+.profile-link {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #999999;
+  text-decoration: none;
+}
+
+.chat-cap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-cap__text {
+  margin: 0 auto;
+}

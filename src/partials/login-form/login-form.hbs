@@ -1,13 +1,8 @@
 <h1 class="auth-form__title firm-font">Вход</h1>
 <form>
-
-  <label for="login" class="auth-form__input-label firm-font">Логин</label>
-  <input type="text" name="login" class="auth-form__input-text" />
-
-  <label for="password" class="auth-form__input-label firm-font">Пароль</label>
-  <input type="password" name="password" class="auth-form__input-text" />
-
-  <button class="firm-font">Авторизоваться</button>
-
+  {{> 'elements/input-text' title="Логин" name="login" type="text"}}
+  {{> 'elements/input-text'  title="Пароль" name="password" type="password"}}
+  {{> 'elements/button' title="Авторизоваться"}}
 </form>
-<a href="register.hbs" class="firm-link firm-font">Нет аккаунта?</a>
+
+{{> 'elements/link' to="register.hbs" title="Нет аккаунта?"}}

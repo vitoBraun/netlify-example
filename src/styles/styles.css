@@ -1,4 +1,4 @@
-/* @import "../partials/login-form/login-form.css"; */
+@import "../partials/chat/chat.css";
 
 /* Указываем box sizing */
 *,
@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-/* Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -25,33 +24,31 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #999999;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
   display: block;
 }
 
-.auth-container {
-  padding-top: 50px;
+.page-container {
+  display: flex;
+  height: 100vh;
 }
 
 .firm-font {
   font-family: "Jura";
   font-style: normal;
   font-weight: 400;
-  line-height: 43px;
 }
 
 .firm-link {
@@ -83,16 +80,21 @@ input[type="password"] {
   border-bottom: 1px solid #0085ff;
   background-color: transparent;
   outline: none;
-  /* margin-bottom: 30px; */
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
 .auth-form {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: auto;
   padding: 35px 35px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 400px;
+  height: fit-content;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);

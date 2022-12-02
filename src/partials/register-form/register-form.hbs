@@ -1,31 +1,12 @@
 <h1 class="auth-form__title firm-font">Регистрация</h1>
 <form>
-
-  <label for="email" class="auth-form__input-label firm-font">Почта</label>
-  <input type="text" name="email" class="auth-form__input-text" />
-
-  <label for="login" class="auth-form__input-label firm-font">Логин</label>
-  <input type="text" name="login" class="auth-form__input-text" />
-
-  <label for="name" class="auth-form__input-label firm-font">Имя</label>
-  <input type="text" name="name" class="auth-form__input-text" />
-
-  <label for="surname" class="auth-form__input-label firm-font">Фамилия</label>
-  <input type="text" name="surname" class="auth-form__input-text" />
-
-  <label for="phone" class="auth-form__input-label firm-font">Телефон</label>
-  <input type="text" name="phone" class="auth-form__input-text" />
-
-  <label for="password" class="auth-form__input-label firm-font">Пароль</label>
-  <input type="password" name="password" class="auth-form__input-text" />
-
-  <label
-    for="password-repeat"
-    class="auth-form__input-label firm-font"
-  >Пароль(ещё раз)</label>
-  <input type="password" name="password-repeat" class="auth-form__input-text" />
-
-  <button class="firm-font">Зарегистирироваться</button>
-
+  {{> 'elements/input-text' title="Почта" name="email" type="text"}}
+  {{> 'elements/input-text' title="Логин" name="login" type="text"}}
+  {{> 'elements/input-text' title="Имя" name="name" type="text"}}
+  {{> 'elements/input-text' title="Фамилия" name="surname" type="text"}}
+  {{> 'elements/input-text' title="Телефон" name="phone" type="text"}}
+  {{> 'elements/input-text' title="Пароль" name="password" type="password"}}
+  {{> 'elements/input-text' title="Пароль(ещё раз)" name="password-repeat" type="password"}}
+  {{> 'elements/button' title="Зарегистирироваться"}}
 </form>
-<a href="login.hbs" class="firm-link firm-font">Вход</a>
+{{> 'elements/link' to="login.hbs" title="Вход"}}
