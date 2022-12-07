@@ -1,11 +1,25 @@
 <div class="chat-feed">
   <div class="chat-feed__header">
-
-    <div class="chat-item__avatar chat-item__avatar-small"><img src="{{#if avatar-url}}{{avatar-url}}{{else}}../asserts/avatars/ava1.jpg{{/if}}" /></div>
+    <div class="chat-feed__header-info">
+      <div class="chat-item__avatar chat-item__avatar-small"><img src="{{#if avatar-url}}{{avatar-url}}{{else}}../asserts/avatars/ava1.jpg{{/if}}" />
+      </div>
+      <div class="chat-feed__header-info__name">Вася</div>
+   </div>
+  <div class="chat-feed__header-info__options"><img src="../asserts/images/threedots.svg"></div>
   </div>
-  <div class="chat-feed__feed">Lorem ipsum dolor sit, amet consectetur
-    adipisicing elit. Obcaecati et praesentium porro ducimus laborum? Vero
-    corporis, sequi aspernatur, aliquid libero omnis repellat unde, amet minus
-    ipsum sed earum. Molestias, cum.</div>
+  <div class="chat-feed__body">
+    {{>'chat/chat-msg-my' text="Привет друг! как ты ? Ходил на концерт? Server running at http://localhost:3000
+✨ Built in 57ms
+MacBook-Pro-Vitalij:study-chat-app vitalij$ 
+MacBook-Pro-Vitalij:study-chat-app vitalij$ npm run dev
+
+> study-chat-app@1.0.0 dev
+> parcel src/pages/index.hbs  -p 3000 --no-cache
+
+Server running at http://localhost:3000
+✨ Built in 65ms" }}
+
+ {{>'chat/chat-msg-apponent' text="Нормально еп" }}
+  </div>
   <div class="chat-feed__footer">Footer</div>
 </div>
