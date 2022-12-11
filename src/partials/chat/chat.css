@@ -127,10 +127,17 @@
 
 .chat-feed__body {
   height: 100%;
+  text-align: center;
 }
 
 .chat-feed__footer {
-  height: 100px;
+  height: 50px;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chat-feed__body-msg-my {
@@ -157,4 +164,12 @@
   margin-left: 20px;
   margin-top: 20px;
   max-width: 50%;
+}
+
+.chat-feed__body-date {
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: #e0ffff;
+  padding: 5px;
+  width: fit-content;
 }
