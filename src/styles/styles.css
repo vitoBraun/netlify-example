@@ -1,4 +1,5 @@
 @import "../partials/chat/chat.css";
+@import "../partials/profile/profile.css";
 
 /* Указываем box sizing */
 *,
@@ -117,3 +118,4 @@ input[type="password"] {
   font-size: 20px;
   display: block;
 }
+
