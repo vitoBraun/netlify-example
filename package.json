@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel src/pages/index.hbs  -p 3000 --no-cache",
     "build": "parcel build src/pages/index.hbs",
-    "server":  "parcel build src/pages/index.hbs && node server.js"
+    "start":  "parcel build src/pages/index.hbs && node server.js"
   },
   "keywords": [],
   "author": "Vitalii Braun",

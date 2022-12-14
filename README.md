@@ -16,5 +16,5 @@ npm run build
 Команда для старта node js сервера и раздачи сбилженной статики
 
 ```
-npm run server
+npm run start
 ```
