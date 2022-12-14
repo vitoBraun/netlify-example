@@ -4,7 +4,7 @@
   "description": "Client application for practicum chat",
   "scripts": {
     "dev": "parcel src/pages/index.hbs  -p 3000 --no-cache",
-    "build": "parcel build src/pages/index.hbs --no-cache && node server.js"
+    "build": "parcel build src/pages/index.hbs && node server.js"
   },
   "keywords": [],
   "author": "Vitalii Braun",
