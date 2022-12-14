@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Client application for practicum chat",
   "scripts": {
-    "dev": "parcel src/pages/index.hbs  -p 3000 --no-cache",
+    "dev": "parcel src/pages/index.hbs  -p 3000 --no-cache --open",
     "build": "parcel build src/pages/index.hbs",
     "start":  "parcel build src/pages/index.hbs && node server.js"
   },
@@ -11,13 +11,13 @@
   "author": "Vitalii Braun",
   "license": "ISC",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@anikin/parcel-transformer-handlebars": "1.0.9",
     "parcel": "^2.8.0",
-    "postcss-import": "^15.0.0",
-    "postcss-nested": "^6.0.0"
+    "postcss-import": "15.0.0",
+    "postcss-nested": "6.0.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "4.18.2"
   },
   "engines": {
     "node": ">=12.0.0"

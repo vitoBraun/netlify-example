@@ -1,11 +1,11 @@
 .chat-list {
   display: block;
-  background-color: #fbfbfb;
+  background-color: var(--main-background-white);
   width: 300px;
   min-width: 300px;
   position: relative;
   border: none;
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid var(--main-light-gray);
 }
 
 .chat-list__head {
@@ -21,7 +21,7 @@
   position: absolute;
   right: 20px;
   top: 20px;
-  color: #999999;
+  color: var(--main-gray);
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@
 
 .chat-item {
   border: 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--main-light-gray);
   margin: 0 10px 0 10px;
   padding: 10px;
   display: flex;
@@ -86,8 +86,8 @@
   display: block;
   height: 20px;
   width: 20px;
-  color: #fff;
-  background-color: #0085ff;
+  color: var(--main-white-color);
+  background-color: var(--main-firm-blue);
   border-radius: 22px;
   font-size: 10px;
   font-weight: 700;
@@ -105,7 +105,7 @@
 .chat-feed__header {
   height: 50px;
   border: 0;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--main-light-gray);
   margin: 0 10px 0 10px;
   padding: 10px;
   display: flex;
@@ -133,7 +133,7 @@
 .chat-feed__footer {
   height: 50px;
   border: 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--main-light-gray);
   margin: 0 10px 0 10px;
   padding: 10px;
   display: flex;
@@ -143,7 +143,7 @@
 .chat-feed__body-msg-my {
   border: 0;
   border-radius: 15px 15px 0 15px;
-  background-color: #cfe2f3;
+  background-color: var(--main-chat-msg-my);
   width: fit-content;
   padding: 10px;
   color: black;
@@ -156,7 +156,7 @@
 .chat-feed__body-msg-apponent {
   border: 0;
   border-radius: 0 15px 15px 15px;
-  background-color: #fff6df;
+  background-color: var(--main-chat-msg-apponent);
   width: fit-content;
   padding: 10px;
   color: black;
@@ -169,7 +169,7 @@
 .chat-feed__body-date {
   margin: 10px auto;
   border-radius: 15px;
-  background-color: #e0ffff;
+  background-color: var(--main-chat-date-gray);
   padding: 5px;
   width: fit-content;
 }
