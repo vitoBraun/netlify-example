@@ -1,0 +1,8 @@
+<h1 class="auth-form__title firm-font">Вход</h1>
+<form>
+  {{> 'elements/input-text' title="Логин" name="login" type="text"}}
+  {{> 'elements/input-text'  title="Пароль" name="password" type="password"}}
+  {{> 'elements/button' title="Авторизоваться"}}
+</form>
+
+{{> 'elements/link' to="register.hbs" title="Нет аккаунта?"}}

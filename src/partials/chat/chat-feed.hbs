@@ -1,0 +1,20 @@
+<div class="chat-feed">
+  <div class="chat-feed__header">
+    <div class="chat-feed__header-info">
+      <div class="chat-item__avatar chat-item__avatar-small"><img alt="Аватар" src="{{#if avatar-url}}{{avatar-url}}{{else}}../asserts/avatars/ava1.jpg{{/if}}" />
+      </div>
+      <div class="chat-feed__header-info__name">Вася</div>
+   </div>
+  <div class="chat-feed__header-info__options"><img alt="Опции" src="../asserts/images/threedots.svg"></div>
+  </div>
+  <div class="chat-feed__body">
+    {{>'chat/chat-date' dateStr="15 декабря"}}
+    {{>'chat/chat-msg-my' text="Привет друг! как ты ? Ходил на концерт?" }}
+    {{>'chat/chat-msg-apponent' text="Нормально" }}
+  </div>
+  <div class="chat-feed__footer">
+    <img src="../asserts/images/attach.svg" alt="Прикрепить">  
+    <input type="text" class="firm-font" placeholder="Сообщение" /> 
+    <img src="../asserts/images/send.svg" alt="Отправить">
+  </div>
+</div>

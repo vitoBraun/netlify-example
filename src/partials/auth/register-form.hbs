@@ -1,0 +1,12 @@
+<h1 class="auth-form__title firm-font">Регистрация</h1>
+<form>
+  {{> 'elements/input-text' title="Почта" name="email" type="text"}}
+  {{> 'elements/input-text' title="Логин" name="login" type="text"}}
+  {{> 'elements/input-text' title="Имя" name="first_name" type="text"}}
+  {{> 'elements/input-text' title="Фамилия" name="second_name" type="text"}}
+  {{> 'elements/input-text' title="Телефон" name="phone" type="text"}}
+  {{> 'elements/input-text' title="Пароль" name="password" type="password"}}
+  {{> 'elements/input-text' title="Пароль(ещё раз)" name="password-repeat" type="password"}}
+  {{> 'elements/button' title="Зарегистирироваться"}}
+</form>
+{{> 'elements/link' to="login.hbs" title="Вход"}}

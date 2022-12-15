@@ -1,0 +1,118 @@
+@import "../partials/chat/chat.css";
+@import "../partials/profile/profile.css";
+
+:root {
+  --main-white-color: #ffffff;
+  --main-background-white: #fbfbfb;
+  --main-firm-blue: #0085ff;
+  --main-light-gray: #eaeaea;
+  --main-gray: #999999;
+  --main-chat-date-gray: #e0ffff;
+  --main-chat-msg-my: #cfe2f3;
+  --main-chat-msg-apponent: #fff6df;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.mn0 {
+  margin: 0
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--main-firm-gray);
+  background-color: var(--main-white-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page-container {
+  display: flex;
+  height: 100vh;
+}
+
+.firm-font {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.firm-link {
+  color: var(--main-firm-blue);
+  font-size: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+form button {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 25px;
+  background: var(--main-firm-blue);
+  border-radius: 16px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--main-firm-blue);
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.auth-form {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 35px 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: fit-content;
+  background: var(--main-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.auth-form__title {
+  margin-bottom: 15px;
+  font-size: 36px;
+  color: #000000;
+}
+
+.auth-form__input-text {
+  display: block;
+}
+
+.auth-form__input-label {
+  font-size: 20px;
+  display: block;
+}
